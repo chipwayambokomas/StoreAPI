@@ -7,28 +7,28 @@ In this project I ceated an API for a store. It allows the user to search for pr
 ## Fields and their validations
 
 * name:
- type: String
- required
+ {type: String, 
+ required}
 
 * price:
- type: Number
- required
+ {type: Number, 
+ required}
 
 * featured:
- type: Boolean
- default: false
+{ type: Boolean, 
+ default: false}
 
 * rating:
- type: Number
- default: 4.5
+{ type: Number, 
+ default: 4.5}
 
 * createdAt:
- type: Date
- default: Current Date
+{ type: Date, 
+ default: Current Date}
 
 * company:
- type: String
- must be one of ("ikea", "liddy", 'caressa', 'marcos')
+{ type: String, 
+ must be one of ("ikea", "liddy", 'caressa', 'marcos')}
 
 
 ## Get Requests Available:
