@@ -33,29 +33,33 @@ In this project I ceated an API for a store. It allows the user to search for pr
 
 ## Get Requests Available:
 
-* Get an array of all the products in the API:
+### Get an array of all the products in the API:
 - Example: http://localhost:3000/api/v1/products
 
-* Sort elements:
+### Sort elements:
 - Example: http://localhost:3000/api/v1/products?sort=price
 - This will sort all product in the array from the lowest price to the highest price
 - Including '-' infront of field from highest tolowest in Integers | DESC Alphabetical form
 
-* Receive elements with specific fields:
+### Receive elements with specific fields:
 - Example: http://localhost:3000/api/v1/products?fields=price
 - This will return only the name of the elements 
 
-* Receive elements with specific name:
+### Receive elements with specific name:
 - Example: http://localhost:3000/api/v1/products?name=wooden desk
 - This will return the product with the name "wooden desk"
 
-* Receive elements wich include specific name:
+### Receive elements wich include specific name:
 - Example: http://localhost:3000/api/v1/products?name=desk
 - This will return the product with "desk" included in their name
 
-* Receive elements on specific page:
+### Receive elements on specific page:
 - Example: http://localhost:3000/api/v1/products?page=3,limit=10
 - This will return elements on page 3, the number of elements displayed on each page would be 10
+
+### Receive elements with respect to numeric Filter page:
+- Example: http://localhost:3000/api/v1/products?numericFiltration=price<30
+- This will return elements with a price less than 20
 
 
 ## What I Learned
